@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>
+<title> color___game</title>
+<style>
+body
+{background-color:rgb(0,0,0);}
+#a {
+background-color:purple;
+color:white;
+width:97%;
+height:25%;
+text-align:center;
+margin-top:0px;
+padding:20px;
+border:3px solid red;}
+th {
+width:60%;
+border:3px solid black;}
+#b {
+background-color:pink;
+color:blue;
+text-align:center;
+padding:20px;
+}
+#c {
+background-color:black;
+color:purple;
+padding:30px;
+margin-left:640px;
+margin-right:730px;
+}
+#bab {
+background-color:black;
+color:blue;
+padding:60px;}
+	</style>
+</head>
+<body>
+
+<div id="a">
+<p><h1><i> ###_____C O L O R    ________      G A M E______### </i></h1></p>
+<br>
+<p><h3><i>  __R__  __G__  __B__ </i></h3></p>
+</div>
+<table>
+<tr>
+<th>
+<div id="b" onclick="avi()">
+<p><b><h3> NEW  GAME</h2></b></p>
+</th>
+<th>
+<div id="bab"> Y O U   W O N</div></th>
+</tr>
+</table>
+<div id="c">
+<p><i><h1></h1></i></p>
+</div>
+<div id="d" onclick="myFunction()" >
+<p > aa</p>
+</div>
+<br>
+<div id="d1"  onclick="myFunction1()">
+<p > aa</p>
+</div>
+<br>
+<div id="d2" onclick="myFunction2()" >
+<p > aa</p>
+</div>
+<br>
+<div id="d3"  onclick="myFunction3()">
+<p > aa</p>
+</div>
+<script>
+function avi()
+  {
+ location.reload();
+}
+  document.getElementById('bab').style.display='none'
+
+var x,y,z,x1,y1,z1,x2,y2,z2,x3,y3,z3;
+x0=Math.floor(Math.random()*255);
+y0=Math.floor(Math.random()*255);
+z0=Math.floor(Math.random()*255);
+x1=Math.floor(Math.random()*255);
+y1=Math.floor(Math.random()*255);
+z1=Math.floor(Math.random()*255);
+x2=Math.floor(Math.random()*255);
+y2=Math.floor(Math.random()*255);
+z2=Math.floor(Math.random()*255);
+x3=Math.floor(Math.random()*255);
+y3=Math.floor(Math.random()*255);
+z3=Math.floor(Math.random()*255);
+var ans,temp;
+temp=Math.floor(Math.random()*3);
+if(temp==0)
+ans=" "+x0+"    "+" "+" "+y0+"      "+z0+" ";
+else if(temp==1)
+ans=" "+x1+"    "+" "+" "+y1+"      "+z1+" ";
+else if(temp==2)
+ans=" "+x2+"    "+" "+" "+y2+"      "+z2+" ";
+else
+ans=" "+x3+"    "+" "+" "+y3+"      "+z3+" ";
+document.getElementById("c").innerHTML =ans;
+
+    document.getElementById("d").style.backgroundColor = "rgb(" + x0 + "," + y0 + "," + z0 + ")";
+document.getElementById("d").style.color = "rgb(" + x0 + "," + y0 + "," + z0 + ")";
+
+document.getElementById("d1").style.backgroundColor = "rgb(" + x1 + "," + y1 + "," + z1 + ")";
+document.getElementById("d1").style.color = "rgb(" + x1 + "," + y1 + "," + z1 + ")";
+
+document.getElementById("d2").style.backgroundColor = "rgb(" + x2 + "," + y2 + "," + z2 + ")";
+document.getElementById("d2").style.color = "rgb(" + x2 + "," + y2 + "," + z2 + ")";
+
+document.getElementById("d3").style.backgroundColor = "rgb(" + x3 + "," + y3 + "," + z3 + ")";
+document.getElementById("d3").style.color = "rgb(" + x3 + "," + y3 + "," + z3 + ")";
+if(temp==0)
+{ function myFunction()
+{   document.getElementById("d").style.backgroundColor = "rgb(" + x0 + "," + y0 + "," + z0 + ")";
+document.getElementById("d").style.color = "rgb(" + x0 + "," + y0 + "," + z0 + ")";
+
+document.getElementById("d1").style.backgroundColor = "rgb(" + x0 + "," + y0 + "," + z0 + ")";
+document.getElementById("d1").style.color = "rgb(" + x0 + "," + y0 + "," + z0 + ")";
+
+document.getElementById("d2").style.backgroundColor = "rgb(" + x0 + "," + y0 + "," + z0 + ")";
+document.getElementById("d2").style.color = "rgb(" + x0 + "," + y0 + "," + z0 + ")";
+
+document.getElementById("d3").style.backgroundColor = "rgb(" + x0 + "," + y0 + "," + z0 + ")";
+document.getElementById("d3").style.color = "rgb(" + x0 + "," + y0 + "," + z0 + ")";
+document.getElementById("bab").style.display='block';
+
+}
+function myFunction1()
+{ document.getElementById('d1').style.display='none' }
+function myFunction2()
+{ document.getElementById('d2').style.display='none' }
+function myFunction3()
+{ document.getElementById('d3').style.display='none' }
+
+}
+else if(temp==1)
+{ function myFunction1()
+{   document.getElementById("d").style.backgroundColor = "rgb(" + x1 + "," + y1 + "," + z1 + ")";
+document.getElementById("d").style.color = "rgb(" + x1 + "," + y1 + "," + z1 + ")";
+
+document.getElementById("d1").style.backgroundColor = "rgb(" + x1 + "," + y1 + "," + z1 + ")";
+document.getElementById("d1").style.color = "rgb(" + x1 + "," + y1 + "," + z1 + ")";
+
+document.getElementById("d2").style.backgroundColor = "rgb(" + x1 + "," + y1 + "," + z1 + ")";
+document.getElementById("d2").style.color = "rgb(" + x1 + "," + y1 + "," + z1 + ")";
+
+document.getElementById("d3").style.backgroundColor = "rgb(" + x1 + "," + y1 + "," + z1 + ")";
+document.getElementById("d3").style.color = "rgb(" + x1 + "," + y1 + "," + z1 + ")";
+document.getElementById("bab").style.display='block';
+}
+function myFunction0()
+{ document.getElementById('d').style.display='none' }
+function myFunction2()
+{ document.getElementById('d2').style.display='none' }
+function myFunction3()
+{ document.getElementById('d3').style.display='none' }
+
+}
+else if(temp==2)
+{ function myFunction2()
+{   document.getElementById("d").style.backgroundColor = "rgb(" + x2 + "," + y2 + "," + z2 + ")";
+document.getElementById("d").style.color = "rgb(" + x2 + "," + y2 + "," + z2 + ")";
+
+document.getElementById("d1").style.backgroundColor = "rgb(" + x2 + "," + y2 + "," + z2 + ")";
+document.getElementById("d1").style.color = "rgb(" + x2 + "," + y2 + "," + z2 + ")";
+
+document.getElementById("d2").style.backgroundColor = "rgb(" + x2 + "," + y2 + "," + z2 + ")";
+document.getElementById("d2").style.color = "rgb(" + x2 + "," + y2 + "," + z2 + ")";
+
+document.getElementById("d3").style.backgroundColor = "rgb(" + x2 + "," + y2 + "," + z2 + ")";
+document.getElementById("d3").style.color = "rgb(" + x2 + "," + y2 + "," + z2 + ")";
+document.getElementById("bab").style.display='block';
+
+}
+function myFunction1()
+{ document.getElementById('d1').style.display='none' }
+function myFunction()
+{ document.getElementById('d').style.display='none' }
+function myFunction3()
+{ document.getElementById('d3').style.display='none' }
+
+}
+else
+{ function myFunction3()
+{   document.getElementById("d").style.backgroundColor = "rgb(" + x3 + "," + y3 + "," + z3 + ")";
+document.getElementById("d").style.color = "rgb(" + x3 + "," + y3 + "," + z3 + ")";
+
+document.getElementById("d1").style.backgroundColor = "rgb(" + x3 + "," + y3 + "," + z3 + ")";
+document.getElementById("d1").style.color = "rgb(" + x3 + "," + y3 + "," + z3 + ")";
+
+document.getElementById("d2").style.backgroundColor = "rgb(" + x3 + "," + y3 + "," + z3 + ")";
+document.getElementById("d2").style.color = "rgb(" + x3 + "," + y3 + "," + z3 + ")";
+
+document.getElementById("d3").style.backgroundColor = "rgb(" + x3 + "," + y3 + "," + z3 + ")";
+document.getElementById("d3").style.color = "rgb(" + x3 + "," + y3 + "," + z3+ ")";
+document.getElementById("bab").style.display='block';
+
+}
+function myFunction1()
+{ document.getElementById('d1').style.display='none' }
+function myFunction2()
+{ document.getElementById('d2').style.display='none' }
+function myFunction()
+{ document.getElementById('d').style.display='none' }
+
+}
+
+</script>
+</body>
+</html>
